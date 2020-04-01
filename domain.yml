@@ -1,32 +1,114 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- Einleitung
+- Lustaufpommes
+- Essenswunsch
+- Lustauf
+- restart
+- LustaufPommes
+- Begrüßung.morgen
+- Begrüßung.mittag
+- Begrüßung.abend
+- Gespräch.morgen
+- Antwort.gut
+- Frühstück.nein
+- Anwort.schlecht
+- Nachrichten.Ja
+- Nachrichten
+- Frühstück.ja
+- Bewegen
+- Gedächtnis
+- Ja
+- Nein
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+  - text: Hey! How are you?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Did that help you?
   utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: Bye
+  utter_Antwortbegrüßung:
+  - text: Hallo, wie geht es dir
+  utter_Antwortessens frage:
+  - text: Was möchtest du essen?
+  - text: Auf was hast Lust?
+  utter_Wiederholunglustauf:
+  - text: Was wolltest Du essen?
+  utter_Wiederholungessen:
+  - text: Auf was hast du Lust
+  - text: Was schmeckt dir wirklich?
+  utter_Rosenkohlaus:
+  - text: Rosenkohl ist aus
+  utter_Rosenkohlausist:
+  - text: Der Kohl ist leider aus
+  utter_Begrüßung.morgen:
+  - text: Guten Morgen! Hast du gut geschlafen?
+  utter_Begrüßung.abend:
+  - text: Guten abend! Wie war dein Tag?
+  utter_Essen.morgen:
+  - text: Das freut mich! Hast du schon gefrühstückt?
+  utter_Gespräch.gut:
+  - text: Das freut mich!
+  utter_Gespräch.schlecht:
+  - text: Warum denn?
+  utter_Frühstück.Ende:
+  - text: Dann wünsch ich dir einen guten Apetit.
+  utter_Frage.Nachrichten:
+  - text: Soll ich dir die aktuellen Nachrichten vorlesen?
+  utter_Frage.Frühstück:
+  - text: Hast du schon gefrühstückt?
+  utter_Frage.Beschäftigung:
+  - text: Hast du dich heute schon bewegt?
+  - text: Hast du heute schon dein gedächnis trainiert?
+  programmstart_Nachrichten:
+  - text: Nachrichten werden gestartet
+  programmstart_Bewegung:
+  - text: Video wird gestartet
+  programmstart_Gedächtnis:
+  - text: Fragen werden gestartet
+  utter_Begrüßung.mittag:
+  - text: Hallo! Was kann ich für dich tun?
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- Antwortbegrüßung
+- Antwortessens frage
+- utter_Antwortessens frage
+- utter_Wiederholunglustauf
+- utter_Wiederholungessen
+- utter_Rosenkohlaus
+- utter_Antwortbegrüßung
+- utter_Rosenkohlausist
+- utter_Begrüßung.morgen
+- utter_Begrüßung.mittag
+- utter_Begrüßung.abend
+- utter_Essen.morgen
+- utter_Gespräch.gut
+- utter_Frage
+- utter_Frühstück.nein
+- utter_Frage.Frühstück
+- utter_Gespräch.schlecht
+- utter_Frühstück.Ende
+- utter_Frage.Nachrichten
+- utter_Frage.Gedächtnis
+- utter_Frage.Bewegen
+- utter_Frage.Beschäftigung
+- programmstart_Nachrichten
+- programmstart_Bewegung
+- programmstart_Gedächtnis
